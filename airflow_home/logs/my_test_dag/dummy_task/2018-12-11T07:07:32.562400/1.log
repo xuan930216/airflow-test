@@ -1,0 +1,13 @@
+[2018-12-11 15:07:41,140] {cli.py:374} INFO - Running on host Xuans-MacBook-Pro.local
+[2018-12-11 15:07:41,153] {models.py:1197} INFO - Dependencies all met for <TaskInstance: my_test_dag.dummy_task 2018-12-11 07:07:32.562400 [queued]>
+[2018-12-11 15:07:41,155] {models.py:1197} INFO - Dependencies all met for <TaskInstance: my_test_dag.dummy_task 2018-12-11 07:07:32.562400 [queued]>
+[2018-12-11 15:07:41,155] {models.py:1407} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2018-12-11 15:07:41,160] {models.py:1428} INFO - Executing <Task(DummyOperator): dummy_task> on 2018-12-11 07:07:32.562400
+[2018-12-11 15:07:41,160] {base_task_runner.py:115} INFO - Running: ['bash', '-c', 'airflow run my_test_dag dummy_task 2018-12-11T07:07:32.562400 --job_id 5 --raw -sd DAGS_FOLDER/test_operators.py']
+[2018-12-11 15:07:41,652] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:07:41,652] {__init__.py:45} INFO - Using executor SequentialExecutor
+[2018-12-11 15:07:41,684] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:07:41,684] {models.py:189} INFO - Filling up the DagBag from /Users/xuanzhang/Documents/repos/airflow-test/airflow_home/dags/test_operators.py
+[2018-12-11 15:07:41,742] {cli.py:374} INFO - Running on host Xuans-MacBook-Pro.local

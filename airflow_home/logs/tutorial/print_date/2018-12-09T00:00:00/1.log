@@ -1,0 +1,20 @@
+[2018-12-11 15:49:32,996] {cli.py:374} INFO - Running on host Xuans-MacBook-Pro.local
+[2018-12-11 15:49:33,008] {models.py:1197} INFO - Dependencies all met for <TaskInstance: tutorial.print_date 2018-12-09 00:00:00 [queued]>
+[2018-12-11 15:49:33,010] {models.py:1197} INFO - Dependencies all met for <TaskInstance: tutorial.print_date 2018-12-09 00:00:00 [queued]>
+[2018-12-11 15:49:33,010] {models.py:1407} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2018-12-11 15:49:33,015] {models.py:1428} INFO - Executing <Task(BashOperator): print_date> on 2018-12-09 00:00:00
+[2018-12-11 15:49:33,015] {base_task_runner.py:115} INFO - Running: ['bash', '-c', 'airflow run tutorial print_date 2018-12-09T00:00:00 --job_id 8 --raw -sd DAGS_FOLDER/bash_test.py']
+[2018-12-11 15:49:33,511] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,510] {__init__.py:45} INFO - Using executor SequentialExecutor
+[2018-12-11 15:49:33,543] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,543] {models.py:189} INFO - Filling up the DagBag from /Users/xuanzhang/Documents/repos/airflow-test/airflow_home/dags/bash_test.py
+[2018-12-11 15:49:33,601] {cli.py:374} INFO - Running on host Xuans-MacBook-Pro.local
+[2018-12-11 15:49:33,612] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,612] {bash_operator.py:70} INFO - Tmp dir root location: 
+[2018-12-11 15:49:33,612] {base_task_runner.py:98} INFO - Subtask:  /var/folders/yr/9vq38bcj48q2zjq90ncj3p7r0000gn/T
+[2018-12-11 15:49:33,613] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,613] {bash_operator.py:80} INFO - Temporary script location: /var/folders/yr/9vq38bcj48q2zjq90ncj3p7r0000gn/T/airflowtmpx4lg6f6v//var/folders/yr/9vq38bcj48q2zjq90ncj3p7r0000gn/T/airflowtmpx4lg6f6v/print_datetcw81e0z
+[2018-12-11 15:49:33,613] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,613] {bash_operator.py:88} INFO - Running command: date
+[2018-12-11 15:49:33,619] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,619] {bash_operator.py:97} INFO - Output:
+[2018-12-11 15:49:33,625] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,625] {bash_operator.py:101} INFO - Tue Dec 11 15:49:33 +08 2018
+[2018-12-11 15:49:33,626] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 15:49:33,625] {bash_operator.py:105} INFO - Command exited with return code 0
