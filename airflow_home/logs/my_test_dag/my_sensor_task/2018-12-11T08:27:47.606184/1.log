@@ -1,0 +1,19 @@
+[2018-12-11 16:28:03,284] {cli.py:374} INFO - Running on host Xuans-MacBook-Pro.local
+[2018-12-11 16:28:03,299] {models.py:1197} INFO - Dependencies all met for <TaskInstance: my_test_dag.my_sensor_task 2018-12-11 08:27:47.606184 [queued]>
+[2018-12-11 16:28:03,302] {models.py:1197} INFO - Dependencies all met for <TaskInstance: my_test_dag.my_sensor_task 2018-12-11 08:27:47.606184 [queued]>
+[2018-12-11 16:28:03,302] {models.py:1407} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 1
+--------------------------------------------------------------------------------
+
+[2018-12-11 16:28:03,307] {models.py:1428} INFO - Executing <Task(MyFirstSensor): my_sensor_task> on 2018-12-11 08:27:47.606184
+[2018-12-11 16:28:03,307] {base_task_runner.py:115} INFO - Running: ['bash', '-c', 'airflow run my_test_dag my_sensor_task 2018-12-11T08:27:47.606184 --job_id 19 --raw -sd DAGS_FOLDER/test_operators.py']
+[2018-12-11 16:28:03,804] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:28:03,804] {__init__.py:45} INFO - Using executor SequentialExecutor
+[2018-12-11 16:28:03,837] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:28:03,836] {models.py:189} INFO - Filling up the DagBag from /Users/xuanzhang/Documents/repos/airflow-test/airflow_home/dags/test_operators.py
+[2018-12-11 16:28:03,894] {cli.py:374} INFO - Running on host Xuans-MacBook-Pro.local
+[2018-12-11 16:28:03,902] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:28:03,902] {my_operators.py:33} INFO - Current minute (28) not is divisible by 3, sensor will retry.
+[2018-12-11 16:28:33,907] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:28:33,907] {my_operators.py:33} INFO - Current minute (28) not is divisible by 3, sensor will retry.
+[2018-12-11 16:29:03,913] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:29:03,912] {my_operators.py:33} INFO - Current minute (29) not is divisible by 3, sensor will retry.
+[2018-12-11 16:29:33,917] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:29:33,917] {my_operators.py:33} INFO - Current minute (29) not is divisible by 3, sensor will retry.
+[2018-12-11 16:30:03,920] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:30:03,919] {my_operators.py:35} INFO - Current minute (30) is divisible by 3, sensor finishing
+[2018-12-11 16:30:03,928] {base_task_runner.py:98} INFO - Subtask: [2018-12-11 16:30:03,928] {sensors.py:85} INFO - Success criteria met. Exiting.
